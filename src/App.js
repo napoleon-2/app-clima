@@ -39,6 +39,7 @@ function App() {
     }
   
     consultartAPI();
+    //eslint-disable-next-line
   }, [consultar])
   
   let componente;

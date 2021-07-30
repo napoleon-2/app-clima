@@ -1,6 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const Formulario = ({resultado}) => {
+const Clima = ({resultado}) => {
     //extraer los valores
     const {name, main} = resultado;
     
@@ -28,4 +29,7 @@ const Formulario = ({resultado}) => {
      );
 }
  
-export default Formulario;
+Clima.propTypes = {
+    resultado: PropTypes.object.isRequired
+}
+export default Clima;
